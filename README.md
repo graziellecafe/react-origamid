@@ -44,3 +44,40 @@ const Produtos = () => {
 };
 
 ```
+
+### Eventos
+Podemos atribuir eventos diretamente aos elementos.
+
+```js
+const Produtos = () => {
+  function handleClick(event) {
+    console.log('Comprou: ' + event.target.innerText);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Camisa</button>
+      <button onClick={handleClick}>Bermuda</button>
+    </div>
+  );
+};
+```
+
+### Hooks
+Utilizamos o React pela facilidade de sincronização do estado. Os Hooks são funções especiais de React, o useState possibilita a sincronização do estado.
+
+
+## Ferramentas de Automação 
+### Bundler
+- Agrupa (bundle) o código do seu aplicativo
+- Permite definirmos os componentes em diferentes arquivos para melhor organização
+- Facilita a importação de código externo instalado via NPM
+- ESBuild, Rollup, Parcel, Turbopack, Webpack
+
+### Transpiler
+- Transforma JSX return <div></div> em funções de React `React.createElement()`
+- Transforma JavaScript novo const em JavaScript antigo var
+- Babel, SWC, ESBuild
+
+
+
