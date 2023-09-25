@@ -1,0 +1,1 @@
+// Um objeto possui propriedades e métodos que podem ser diretos ou herdados (prootótipo)
