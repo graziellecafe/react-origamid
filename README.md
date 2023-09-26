@@ -79,5 +79,19 @@ Utilizamos o React pela facilidade de sincronização do estado. Os Hooks são f
 - Transforma JavaScript novo const em JavaScript antigo var
 - Babel, SWC, ESBuild
 
+## Ferramentas Front End 
+```js
+npm create vite@latest .
+npm install
+```
 
+### Comandos
+Inicia o desenvolvimento
+```js
+npm run dev
+```
 
+Cria a build final
+```js
+npm run build
+```
