@@ -18,16 +18,6 @@ function App() {
   )
 }
 
-
-
-
-
-
-
-
-
-
-
 /*function App() {
  const produtos = ['Notebook', 'Smartphone', 'Tablet'];  
 const empresas = [<li key="e1">Apple</li>, <li key="e2">Google</li>]

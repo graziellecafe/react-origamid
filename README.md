@@ -95,3 +95,19 @@ Cria a build final
 ```js
 npm run build
 ```
+
+## JSX e arrays
+```js
+function App() {
+const filmes = ['Before Sunrise', 'Before Sunset', 'Before Midnight']; 
+
+
+  return (
+    <>
+      {filmes.map((filme) => (
+        <li key={filme}>{filme}</li>
+      ))}
+    </>
+  )
+}
+```
