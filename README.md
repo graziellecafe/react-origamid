@@ -111,3 +111,44 @@ const filmes = ['Before Sunrise', 'Before Sunset', 'Before Midnight'];
   )
 }
 ```
+
+
+## Eventos
+Podemos atribuir eventos diretamente aos elementos JSX como um atributo. Os eventos são sintáticos, ou seja, são criados pelo próprio React porém seguindo as especificações da W3C (e funcionam igualmente nos diversos browsers que o React suporta).
+
+```js
+const App = () => {
+  function handleClick(event) {
+    alert('Comprou: ' + event.target.innerText);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Camisa</button>
+      <button onClick={handleClick}>Bermuda</button>
+    </div>
+  );
+};
+
+```
+
+## Componentes
+O ideal é dividir o aplicativo em pequenos componentes para facilitar a manutenção do mesmo. Iremos trabalhar durante o curso com componentes funcionais.
+```js
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <p>Esse é o meu aplicativo</p>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
+
+```
